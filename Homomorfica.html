@@ -1,0 +1,224 @@
+<!DOCTYPE HTML>
+<!--
+	Editorial by HTML5 UP
+	html5up.net | @ajlkn
+	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
+-->
+<html>
+	<head>
+		<title>Generic - Editorial by HTML5 UP</title>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+		<link rel="stylesheet" href="assets/css/main.css" />
+	</head>
+	<body class="is-preload">
+
+		<!-- Wrapper -->
+			<div id="wrapper">
+
+				<!-- Main -->
+					<div id="main">
+						<div class="inner">
+
+							<!-- Header -->
+								<header id="header">
+									<a href="index.html" class="logo"><strong>Teoria de la información y codificación</strong> Jaramillo Luna Jose Alfredo</a>
+									<ul class="icons">
+										<li><a href="https://github.com/LunnaAl" class="icon brands fa-github"><span class="label">GitHub</span></a></li>
+										<li><a href="https://www.instagram.com/lunaa.al_/" class="icon brands fa-instagram"><span class="label">Instagram</span></a></li>
+                                        <li><a href="https://www.linkedin.com/in/jose-alfredo-jaramillo-luna-/" class="icon brands fa-linkedin-in"><span class="label">Linkedin</span></a></li>
+									</ul>
+								</header>
+
+							<!-- Content -->
+								<section>
+									<header class="main">
+										<h1>Criptografía Homomorfica</h1>
+									</header>
+
+									<span class="image main"><img src="images/pico.png" alt="" /></span>
+
+                                        <p>La criptografía homomórfica es una rama de la criptografía que permite realizar operaciones algebraicas sobre datos cifrados sin necesidad de descifrarlos previamente. Este enfoque representa un gran avance frente a los esquemas tradicionales, ya que permite preservar la confidencialidad durante el procesamiento de datos en entornos potencialmente no confiables, como servidores en la nube. El principio básico es que las operaciones que se realizan sobre el texto cifrado se traducen, una vez desencriptado el resultado, en el mismo efecto que si se hubieran hecho sobre los datos originales.</p>
+
+                                        <p>Existen tres categorías principales:</p>
+
+                                        <ul>
+                                            <li><strong>Parcialmente homomórfica (PHE)</strong>: donde solo se permite una operación (suma o multiplicación) un número indefinido de veces. Un ejemplo clásico de este tipo es el sistema de cifrado RSA para multiplicaciones.</li>
+                                            
+                                            <li><strong>Semi-homomórfica (SHE)</strong>: donde se permite una combinación limitada de operaciones de suma y multiplicación.</li>
+                                            
+                                            <li><strong>Totalmente homomórfica (FHE)</strong>: la más potente, permite una cantidad ilimitada de operaciones sobre datos cifrados. Esta última categoría es considerada el 'santo grial' de la privacidad computacional.</li>
+                                        </ul>
+
+                                        <p>La criptografía homomórfica se basa en complejos problemas matemáticos, como el aprendizaje con errores (LWE), que son considerados difíciles incluso para computadores cuánticos. Esta característica la convierte en una herramienta muy prometedora para el futuro de la privacidad digital. Permite realizar cálculos sobre datos cifrados sin necesidad de descifrarlos previamente, proporcionando resultados cifrados equivalentes al procesamiento directo de los datos originales. Existen tres categorías principales: parcialmente homomórfica (PHE), semi-homomórfica (SHE) y totalmente homomórfica (FHE), siendo esta última capaz de ejecutar cualquier tipo de operación matemática.</p>
+
+                                    <hr class="major" />
+
+									<h2>Principales esquemas y evolución</h2>
+                                        <p>Los primeros avances significativos fueron realizados por Craig Gentry en 2009, quien desarrolló el primer esquema totalmente homomórfico funcional basado en el uso de ideales en estructuras algebraicas llamadas reticulados. Este avance demostró que era posible construir esquemas de cifrado que permitieran cualquier tipo de computación arbitraria sobre datos cifrados.</p>
+
+                                        <p>Posteriormente, surgieron esquemas más eficientes y prácticos como:</p>
+
+                                        <ul>
+                                            <li><strong>BGV (Brakerski-Gentry-Vaikuntanathan)</strong>: que mejora la eficiencia utilizando técnicas modulares sobre reticulados y se considera adecuado para operaciones binarias y aritméticas.</li>
+                                            
+                                            <li><strong>BFV (Brakerski-Fan-Vercauteren)</strong>: ideal para trabajar con enteros y aplicaciones financieras, ampliamente implementado en bibliotecas como Microsoft SEAL.</li>
+                                            
+                                            <li><strong>CKKS (Cheon-Kim-Kim-Song)</strong>: diseñado específicamente para cálculos aproximados sobre números reales, útil para aplicaciones de aprendizaje automático y estadísticas.</li>
+                                        </ul>
+
+                                        <p>Estos esquemas han sido incluidos en marcos de estandarización como los promovidos por el NIST y la iniciativa HomomorphicEncryption.org, que buscan fomentar la interoperabilidad y seguridad de estas técnicas en entornos reales. El avance de estas variantes ha facilitado el desarrollo de bibliotecas criptográficas especializadas, como IBM HELib, SEAL, PALISADE y TenSEAL, que permiten su integración en proyectos de software y análisis de datos confidenciales.</p>
+
+                                        <p>Los avances significativos fueron realizados por Craig Gentry en 2009, con el primer esquema totalmente homomórfico. Posteriormente, surgieron esquemas más eficientes como BGV, BFV y CKKS, que permiten cálculos numéricos precisos y operaciones mixtas de adición y multiplicación en datos cifrados. Estos esquemas están ahora bajo consideración para estándares por parte de organizaciones como el NIST.</p>
+									
+                                    <hr class="major" />
+
+									<h2>Aplicaciones y beneficios</h2>
+                                                                            
+                                    <p>La criptografía homomórfica tiene un gran potencial en numerosos sectores debido a su capacidad para preservar la privacidad de los datos incluso durante su procesamiento.</p>
+
+                                    <h3>Aplicaciones clave:</h3>
+
+                                    <ul>
+                                        <li>
+                                            <strong>Ámbito de la salud:</strong> Permite realizar análisis sobre expedientes clínicos cifrados para detectar patrones de enfermedades sin exponer la información personal del paciente. Esto resulta clave en investigaciones médicas internacionales y en el cumplimiento de regulaciones como el GDPR y la HIPAA.
+                                        </li>
+                                        
+                                        <li>
+                                            <strong>Sector financiero:</strong> Los bancos pueden evaluar riesgos crediticios o realizar auditorías de cuentas sin tener que acceder directamente a los datos sensibles de los clientes.
+                                        </li>
+                                        
+                                        <li>
+                                            <strong>Gobierno y defensa:</strong> Se considera vital para compartir inteligencia de manera segura entre agencias sin comprometer fuentes o métodos confidenciales.
+                                        </li>
+                                        
+                                        <li>
+                                            <strong>Inteligencia artificial:</strong> Se ha comenzado a entrenar modelos directamente sobre datos cifrados, lo que abre la puerta a sistemas de aprendizaje automático privados que protegen la información del usuario desde el principio hasta el fin del proceso.
+                                        </li>
+                                        </ul>
+
+                                        <h3>Beneficios principales:</h3>
+
+                                        <ul>
+                                            <li>Posibilidad de procesar datos confidenciales en entornos no confiables (como la nube)</li>
+                                            <li>Cumplimiento reforzado de normativas de privacidad</li>
+                                            <li>Potencial para abrir nuevos modelos de negocio basados en análisis seguros y colaborativos de datos</li>
+                                        </ul>
+
+                                        <p>La criptografía homomórfica tiene un gran potencial en campos como la medicina (permitiendo análisis de datos médicos sensibles sin comprometer la privacidad), finanzas (protegiendo datos financieros mientras se realizan cálculos complejos), y en tecnologías emergentes como inteligencia artificial y aprendizaje automático, donde la privacidad de datos es crítica.</p>
+									
+
+									<hr class="major" />
+
+									<h2>Retos y Perspectivas</h2>
+									<div class="challenges-section">
+                                        <h3>Desafíos y Futuro de la Criptografía Homomórfica</h3>
+                                        
+                                        <p>A pesar de su potencial, la criptografía homomórfica enfrenta desafíos importantes en cuanto a:</p>
+                                        
+                                        <ul class="challenges-list">
+                                            <li>Eficiencia computacional</li>
+                                            <li>Crecimiento exponencial del tamaño de los datos cifrados</li>
+                                        </ul>
+
+                                        <div class="research-advances">
+                                            <h3>Avances en Investigación</h3>
+                                            <p>Investigaciones recientes buscan optimizar estos esquemas mediante:</p>
+                                            <ul>
+                                            <li>Hardware especializado</li>
+                                            <li>Algoritmos mejorados</li>
+                                            </ul>
+                                            <p>Lo que podría llevar a una adopción generalizada en un futuro próximo.</p>
+                                        </div>
+
+                                        <div class="adoption-timeline">
+                                            <h4>Horizonte de Adopción</h4>
+                                            <p>Se estima que la adopción práctica de soluciones totalmente homomórficas en entornos comerciales podría consolidarse entre <strong>2028 y 2035</strong>, conforme:</p>
+                                            <ul>
+                                            <li>Mejoren las bibliotecas criptográficas</li>
+                                            <li>Se optimicen los entornos de procesamiento seguro</li>
+                                            </ul>
+                                        </div>
+
+                                        <div class="industry-trends">
+                                            <h4>Tendencias del Sector</h4>
+                                            <p>Esta proyección se alinea con:</p>
+                                            <ul>
+                                            <li>El interés creciente de gobiernos e instituciones financieras</li>
+                                            <li>La necesidad de proteger información confidencial sin sacrificar eficiencia operativa</li>
+                                            <li>Sinergias con otras tecnologías emergentes:
+                                                <ul>
+                                                <li>Inteligencia artificial aplicada a datos cifrados</li>
+                                                <li>Cómputo confidencial en la nube</li>
+                                                </ul>
+                                            </li>
+                                            </ul>
+                                        </div>
+
+                                        <div class="conclusion">
+                                            <p>Estas convergencias tecnológicas impulsan el desarrollo de:</p>
+                                            <ul>
+                                                <li>Marcos regulatorios</li>
+                                                <li>Estándares internacionales</li>
+                                            </ul>
+                                            <p>Que favorecen la adopción de esquemas criptográficos homomórficos como un nuevo paradigma de privacidad computacional.</p>
+                                        </div>
+                                        </div>
+								</section>
+
+						</div>
+					</div>
+
+				<!-- Sidebar -->
+					<div id="sidebar">
+						<div class="inner">
+
+							<!-- Menu -->
+								<nav id="menu">
+									<header class="major">
+										<h2>Menu</h2>
+									</header>
+									<ul>
+										<li><a href="index.html">Pagina principal</a></li>
+										<li><a href="Cuantica.html">Cuantica</a></li>
+										<li><a href="Homomorfica.html">Homomórfica</a></li>
+										<li><a href="tendenciasIT.html">Tendencias IT</a></li>
+										<li><a href="conclusion.html">Conclusión</a></li>
+										<li></li>
+										<a></a>
+									</ul>
+								
+
+							<!-- Section -->
+								<section>
+									<header class="major">
+										<h2>Contacto Académico</h2>
+									</header>
+									<p>Para consultas sobre este proyecto de investigación en tecnologías emergentes, puedes comunicarte conmigo a través de los siguientes medios:</p>
+									<ul class="contact">
+										<li class="icon solid fa-envelope"><a href="#">jalfredo.jaramillo.l@gmail.com</a></li>
+										<li class="icon solid fa-phone">(+52) 5533518948</li>
+										<li class="icon solid fa-user-graduate">INSTITUTO POLITECNICO NACIONAL<br />
+										ESIME CULHUACAN</li>
+									</ul>
+								</section>
+								</nav>
+							<!-- Footer -->
+								<footer id="footer">
+									<p class="copyright">&copy; Copyright</p>
+								</footer>
+
+						</div>
+					</div>
+
+			</div>
+
+		<!-- Scripts -->
+			<script src="assets/js/jquery.min.js"></script>
+			<script src="assets/js/browser.min.js"></script>
+			<script src="assets/js/breakpoints.min.js"></script>
+			<script src="assets/js/util.js"></script>
+			<script src="assets/js/main.js"></script>
+
+	</body>
+</html>
